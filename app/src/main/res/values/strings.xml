@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Estate App</string>
+
+    <color name="holo_green_light">#A4D65E</color>
 </resources>

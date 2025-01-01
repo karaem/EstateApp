@@ -6,6 +6,10 @@ android {
     namespace = "com.example.estateapp"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding  = true
+    }
+
     defaultConfig {
         applicationId = "com.example.estateapp"
         minSdk = 24

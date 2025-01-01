@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.Landing_Page">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image6" />
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_splash" /> <!-- استبدل بـ اسم الصورة الفعلي -->
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image5" /> <!-- استبدل بـ اسم الصورة الفعلي -->
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image7" />
+    </GridLayout>
+
+    <!-- نص "Ready to explore?" -->
+    <TextView
+
+        android:id="@+id/ReadyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Ready to explore?"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp" />
+
+    <!-- زر Continue with Email -->
+
+
+    <!--
+     <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue with Email"
+        android:background="@color/holo_green_light"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="16dp"/> -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Continue_bti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue  with Email"
+        android:layout_below="@+id/ReadyTV"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="47dp"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:textSize="13dp"
+        android:background="@color/green_light"
+
+        style="@style/Widget.AppCompat.Button"
+        />
+
+    <TextView
+        android:id="@+id/OR_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_below="@+id/Continue_bti"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+
+        android:layout_below="@+id/OR_TV">
+
+        <Button
+            android:id="@+id/button_google"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/google"
+
+        />
+
+        <Button
+            android:id="@+id/button_facebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/facebook"
+
+        />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Register"
+        android:layout_below="@id/LinearLayout"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+
+
+</RelativeLayout>

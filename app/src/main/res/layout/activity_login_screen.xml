@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.Login_Screen">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let’s Sign In "
+        android:textStyle="normal"
+        android:textSize="24sp"
+
+        android:layout_marginTop="20dp"
+        android:textColor="@color/purple_700"
+        android:layout_gravity="start"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quis nostrud exercitation ullamco laboris nisi ut "
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_gravity=""
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="   Email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/email1"
+        android:layout_marginTop="70dp"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+
+        android:drawableStart="@drawable/password1"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textColor="@color/purple_700"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="@drawable/social_button_background"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="67dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:layout_marginTop="90dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/google16"
+            android:layout_weight="1"
+            android:text="Google"
+            android:padding="16dp"
+            android:background="@drawable/button_background"
+
+            android:layout_marginEnd="8dp"/>
+
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/facebook1"
+            android:text="Facebook"
+
+            android:contentDescription="Icon Button"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <!-- Register Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Register"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+</LinearLayout>

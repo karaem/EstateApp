@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#FFFFFF">
+    xmlns:tools="http://schemas.android.com/tools">
 
 
     <TextView
@@ -65,21 +64,21 @@
 
     <ImageView
         android:id="@+id/rectangleImage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="540dp"
         android:src="@drawable/onbording_pic1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.6"
 
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text1"
-        app:layout_constraintVertical_bias="0.753" />
+        app:layout_constraintVertical_bias="0.68" />
 
     <Button
         android:id="@+id/nextButton"
-        android:layout_width="233dp"
+        android:layout_width="180dp"
         android:layout_height="54dp"
         android:layout_marginBottom="40dp"
         android:backgroundTint="#8bc83f"
@@ -89,6 +88,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -102,5 +102,20 @@
         app:layout_constraintTop_margin="10dp" />
 
 
+    <ImageButton
+        android:id="@+id/Skip_bt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="44dp"
+
+        android:background="@drawable/circular_button"
+        android:src="@drawable/baseline_arrow_back_"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintHorizontal_bias="0.803"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

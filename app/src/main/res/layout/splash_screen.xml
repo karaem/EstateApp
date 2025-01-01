@@ -44,6 +44,7 @@
         android:background="@drawable/logo" />
 
     <Button
+        android:id="@+id/list_start"
         android:layout_width="190dp"
         android:layout_height="54dp"
         android:layout_marginStart="110dp"

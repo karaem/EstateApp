@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".ui.Notification_Screen_1">
+
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messages"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_toEndOf="@id/header"
+        android:layout_marginStart="16dp"
+        android:layout_alignBaseline="@id/header"/>
+<!---Tabs -->
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="All" />
+
+        <Button
+            android:id="@+id/review"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Review" />
+
+        <Button
+            android:id="@+id/sold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sold" />
+
+        <Button
+            android:id="@+id/house"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="House" />
+    </LinearLayout>
+
+
+
+    <!-- Notifications -->
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today"
+        android:textSize="18sp"
+        android:layout_below="@id/tabs"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/notifications_list"
+        android:layout_below="@id/today"
+        android:layout_marginTop="8dp">
+
+        <!-- Notification Item -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/your_image"
+                android:layout_marginEnd="8dp"
+              android:clipToOutline="true"
+             android:background="@drawable/circle_shape"/> <!-- يستخدم لتحقيق شكل دائري -->
+            <TextView
+                android:text="Emmett Perry"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/> <!-- إضافة قيمة layout_height -->
+
+            <TextView
+                android:text="Just messaged you. Check the message in message tab."
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/> <!-- إضافة قيمة layout_height -->
+
+            <TextView
+                android:text="10 mins ago"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/> <!-- إضافة قيمة layout_height -->
+          </LinearLayout>
+
+
+        <!-- Add more notification items here in the same format -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profile_imag"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile_image"
+            android:layout_marginEnd="8dp"
+            android:clipToOutline="true"
+            android:background="@drawable/circle_shape"/> <!-- الشكل الدائري -->
+
+            <TextView
+                android:text="Geraldo"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Older notifications"
+        android:textSize="18sp"
+        android:layout_below="@id/notifications_list"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
