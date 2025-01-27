@@ -2,4 +2,12 @@
     <string name="app_name">Estate App</string>
 
     <color name="holo_green_light">#A4D65E</color>
+    <string name="image_desc">Description of the image</string>
+    <string name="house"> house image</string>
+    <string name="cottage"> cottage image</string>
+    <string name="user_image"> user image</string>
+    <string name="notification_icon"> notification </string>
+    <string name="profile_picture"> profile </string>
+
+
 </resources>

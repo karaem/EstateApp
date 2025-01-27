@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Register_Form_OTP">
+
+    <ImageButton
+        android:id="@+id/Skip"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="32dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/backe_1"
+        android:background="@drawable/circular_button_1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the code"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#0F4C75"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the 4 digit code that we just sent to"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jonathan@email.com"
+        android:textSize="16sp"
+        android:layout_marginStart="10dp"
+        android:textColor="#0F4C75"/>
+
+    <!-- OTP Input Fields -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/otp_field_1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="5dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/otp_input_background" />
+
+        <EditText
+            android:id="@+id/otp_field_2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/otp_input_background" />
+
+        <EditText
+            android:id="@+id/otp_field_3"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/otp_input_background" />
+
+        <EditText
+            android:id="@+id/otp_field_4"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/otp_input_background" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/timer_background"
+        android:padding="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/timer_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/timer" />
+
+        <TextView
+            android:id="@+id/timer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/timer_icon"
+            android:layout_marginStart="8dp"
+            android:text="00:21"
+            android:textSize="24sp"
+            android:textColor="#0F4C75" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/OTP_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn’t receive the OTP? "
+            android:textColor="#333333"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/Resend_OTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP"
+            android:textColor="@color/dark_Cyan"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
