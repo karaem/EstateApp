@@ -6,30 +6,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".ui.Login_Screen">
+    tools:context=".ui.Login_Form_Eroor">
 
-    <TextView
-        android:id="@+id/titleTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Let’s Sign In "
-        android:textStyle="normal"
-        android:textSize="24sp"
 
-        android:layout_marginTop="20dp"
-        android:textColor="@color/dark_Cyan"
-        android:layout_gravity="start"
-        android:layout_marginBottom="16dp"/>
+    <ImageButton
+        android:id="@+id/Skip_bt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="quis nostrud exercitation ullamco laboris nisi ut "
+        android:layout_margin="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="32dp"
+
+        android:src="@drawable/backe_1"
+        android:background="@drawable/circular_button_1"
         android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let’s Sign In"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_Cyan"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quis nostrud exercitationullamco laboris nisi ut"
+        android:textSize="14sp"
         android:textColor="@android:color/darker_gray"
-        android:layout_gravity=""
+        android:layout_marginStart="10dp"
         android:layout_marginBottom="24dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/error_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="your  password  is  incorrect"
+        android:textStyle="normal"
+        android:background="@drawable/social_bt_social_cyan"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        android:enabled="true"
+
+        android:layout_margin="10dp"
+
+        android:layout_marginTop="30dp"/>
+
 
     <EditText
         android:id="@+id/emailEditText"
@@ -39,7 +73,8 @@
         android:inputType="textEmailAddress"
         android:background="@drawable/edit_text_background"
         android:drawableStart="@drawable/email1"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
         android:padding="12dp"/>
     <EditText
         android:id="@+id/passwordEditText"
@@ -47,19 +82,38 @@
         android:layout_height="wrap_content"
         android:hint="  Password"
         android:inputType="textPassword"
+
         android:background="@drawable/edit_text_background"
         android:padding="12dp"
-
+        android:layout_margin="10dp"
         android:drawableStart="@drawable/password1"
         android:layout_marginTop="15dp"/>
-    <TextView
-        android:id="@+id/forgotPasswordTextView"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Forgot password?"
-        android:textColor="@color/dark_Cyan"
-        android:layout_gravity="end"
-        android:layout_marginTop="8dp"/>
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:textColor="@color/dark_Cyan"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/hide_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hide password"
+            android:textColor="@color/dark_Cyan"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
@@ -67,20 +121,24 @@
         android:text="Login"
         android:background="@drawable/social_button_background"
         android:textColor="@android:color/white"
-        android:layout_marginTop="67dp"/>
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="OR"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="20dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-
-        android:layout_marginTop="90dp">
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp">
 
         <ImageButton
             android:layout_width="0dp"
@@ -100,6 +158,7 @@
             android:layout_weight="1"
             android:src="@drawable/facebook1"
             android:text="Facebook"
+            android:layout_marginEnd="10dp"
 
             android:contentDescription="Icon Button"
             android:layout_centerInParent="true"
@@ -107,6 +166,7 @@
             android:textColor="@android:color/black"/>
     </LinearLayout>
     <!-- Register Text -->
+
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -133,6 +193,5 @@
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
-
 
 </LinearLayout>

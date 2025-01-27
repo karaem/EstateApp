@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.Hom_Full">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_location"
+            />
+        <!-- موقع المستخدم -->
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Jakarta, Indonesia"
+            android:textSize="16sp"
+            android:textColor="#333"
+            android:layout_weight="1"
+            android:paddingEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/notificationIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_notification"
+            android:padding="8dp"
+            android:background="@drawable/circle_whiet"
+            android:contentDescription="@string/notification_icon"
+            android:layout_marginEnd="40dp"/>
+
+        <ImageView
+            android:id="@+id/userProfilePic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_user_profile"
+            android:background="@drawable/circle_background"
+            android:contentDescription="@string/profile_picture" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginTop="10dp"
+        android:text="Hey, Jonathan!"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/exploreMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeMessage"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Let's start exploring"
+        android:textSize="16sp" />
+    <!--
+    <EditText
+          android:id="@+id/searchField"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:layout_below="@id/exploreMessage"
+          android:layout_marginTop="16dp"
+          android:background="@drawable/search_background"
+          android:hint="Search House, Apartment, etc."
+          android:padding="12dp"
+          android:drawableStart="@drawable/ic_search" />
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/exploreMessage"
+        android:background="@drawable/search_background">
+
+        <!-- أيقونة البحث -->
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_search"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp" />
+
+        <!-- حقل إدخال النص -->
+        <EditText
+            android:id="@+id/searchField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/searchIcon"
+            android:layout_marginStart="8dp"
+            android:hint="Search House, Apartment, etc."
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"/>
+
+        <!-- أيقونة الميكروفون
+          <ImageView
+            android:id="@+id/micIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mic"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="8dp" />-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btu_All"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="All"
+            android:background="@drawable/button_background_selected" />
+
+        <Button
+            android:id="@+id/btu_House"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="House"
+            android:background="@drawable/button_background_selected" />
+
+        <Button
+            android:id="@+id/btu_Apartment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Apartment"
+            android:background="@drawable/button_background_selected" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halloween Sale!"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All discounts up to 60%"
+                android:textSize="14sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="→"
+                android:background="@android:color/holo_blue_light"/>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

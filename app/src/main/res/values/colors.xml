@@ -4,8 +4,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="dark_Cyan">#234F68</color>
     <color name="green_light">#8BC84F</color>
     <color name="teal_700">#FF018786</color>
     <color name="lk700">#D7D7D7</color>
+    <color name="lk7020">#252B5C</color>
+    <color name="primaryColor">#6200EE</color>
+    <color name="colorDefault">#e0e0e0</color>  <!-- لون الزر الافتراضي -->
+    <color name="colorPressed">#006064</color>   <!-- لون الزر عند الضغط -->
 </resources>
