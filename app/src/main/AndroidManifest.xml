@@ -77,6 +77,51 @@
             android:name=".ui.Login_Screen_2"
             android:exported="false" />
         <activity
+            android:name=".ui.Hom_Full"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activity_Third"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Account_Setup_Fill"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Profile_Setup"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Add_PaymentMethod"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Payment_Method"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Select_Preferred"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activity_preferable"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Location_Choose"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Location_Empty"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Register_Form_OTP"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Register_From_Empty"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Support_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Login_Form_Eroor"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Login_Screen_2"
+            android:exported="false" />
+        <activity
             android:name=".ui.Login_Screen_1"
             android:exported="false" />
         <activity
