@@ -5,17 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Register_From_Empty"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".ui.Register_From_Empty">
+
     <ImageButton
         android:id="@+id/Skip"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="32dp"
         android:layout_margin="15dp"
-        android:src="@drawable/backe_1"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/circular_button_1"
+        android:src="@drawable/backe_1"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/nextButton"
@@ -24,13 +25,12 @@
         tools:ignore="MissingConstraints" />
 
     <!-- عنوان -->
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="start"
         android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:orientation="horizontal"
         android:padding="16dp">
 
         <TextView
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:text="Create your  "
             android:textColor="#333333"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/register"
@@ -55,107 +55,105 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="quis nostrud exercitation ullamco laboris nisi ut"
-        android:textSize="14sp"
-        android:textColor="#757575"
         android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="quis nostrud exercitation ullamco laboris nisi ut"
+        android:textColor="#757575"
 
-        android:layout_marginTop="8dp" />
+        android:textSize="14sp" />
 
     <!-- حقل الاسم الكامل -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/user1"
-            android:layout_marginStart="5"
-        android:layout_gravity="center_vertical"
-        android:paddingEnd="8dp" />
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:paddingEnd="8dp"
+            android:src="@drawable/user1" />
 
         <EditText
             android:id="@+id/editTextFullName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
             android:layout_weight="1"
-            android:hint="Full name"
             android:background="@drawable/edittext_background"
-            android:padding="12dp"
-            android:layout_marginEnd="10
-"/>
+            android:hint="Full name"
+            android:padding="12dp" />
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="12dp">
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/emailnwe"
-        android:layout_gravity="center_vertical"
+            android:layout_gravity="center_vertical"
             android:layout_marginStart="5dp"
-        android:paddingEnd="8dp" />
+            android:paddingEnd="8dp"
+            android:src="@drawable/emailnwe" />
 
         <EditText
             android:id="@+id/editTextEmail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
             android:layout_weight="1"
-            android:hint="Email"
             android:background="@drawable/edittext_background"
-            android:padding="12dp"
-            android:layout_marginEnd="10dp"/>
+            android:hint="Email"
+            android:padding="12dp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="12dp">
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/password"
-        android:layout_gravity="center_vertical"
-        android:paddingEnd="8dp" />
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="8dp"
+            android:src="@drawable/password" />
 
         <EditText
             android:id="@+id/editTextPassword"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
             android:layout_weight="1"
-            android:hint="Password"
             android:background="@drawable/edittext_background"
-            android:padding="12dp"
+            android:hint="Password"
             android:inputType="textPassword"
-            android:layout_marginEnd="10dp"/>
+            android:padding="12dp" />
     </LinearLayout>
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="16dp"
         android:layout_marginTop="25dp"
-        >
+        android:orientation="horizontal"
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/forgot_password"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Terms of service"
             android:textColor="@color/dark_Cyan"
-            android:textSize="16sp"
-            android:layout_weight="1"/>
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/hide_password"
@@ -163,7 +161,7 @@
             android:layout_height="wrap_content"
             android:text="Show password"
             android:textColor="@color/dark_Cyan"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -171,10 +169,10 @@
         android:id="@+id/buttonRegister"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Register"
-        android:backgroundTint="#8BC34A"
-        android:textColor="#FFFFFF"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"/>
+        android:backgroundTint="#8BC34A"
+        android:text="Register"
+        android:textColor="#FFFFFF" />
 </LinearLayout>
