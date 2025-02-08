@@ -29,6 +29,7 @@
         android:layout_weight="1"
         android:layout_marginBottom="24dp"/>
     <!-- زر التالي -->
+
     <Button
         android:id="@+id/nextButton"
         android:layout_width="match_parent"
