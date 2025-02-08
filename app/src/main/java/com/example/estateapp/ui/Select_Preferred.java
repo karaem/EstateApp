@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.example.estateapp.Adapters.PropertyAdapter;
 import com.example.estateapp.Java.Property;
 import com.example.estateapp.R;
 import com.example.estateapp.databinding.ActivitySelectPreferredBinding;
@@ -18,8 +19,8 @@ import java.util.List;
 
 public class Select_Preferred extends AppCompatActivity {
     ActivitySelectPreferredBinding binding;
-    private PagerAdapter adapter;
-
+//    private PagerAdapter adapter;
+    private PropertyAdapter propertyAdapter;
 
 
 
@@ -30,10 +31,11 @@ public class Select_Preferred extends AppCompatActivity {
         binding =ActivitySelectPreferredBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         List<Property> properties = getPropertyList();
-        adapter =new ParserAdapter(properties);
+//        adapter =new ParserAdapter(properties);
+        propertyAdapter = new PropertyAdapter(properties);
 
         binding.recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
-        binding.recyclerView.setAdapter(adapter);
+        binding.recyclerView.setAdapter(propertyAdapter);
         binding.nextButton.setOnClickListener(v -> {
             // قم بتنفيذ الإجراء المطلوب عند النقر على "Next"
         });
