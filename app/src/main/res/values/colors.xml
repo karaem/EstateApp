@@ -8,4 +8,6 @@
     <color name="green_light">#8BC84F</color>
     <color name="teal_700">#FF018786</color>
     <color name="lk700">#D7D7D7</color>
+    <color name="dark_Cyan">#234F68</color>
+    <color name="colorDefault">#76B0CF</color>
 </resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "123035232748",
+    "project_id": "firebaenew",
+    "storage_bucket": "firebaenew.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123035232748:android:565199a432559b460638c9",
+        "android_client_info": {
+          "package_name": "com.example.estateapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCisfP0AzVvbxVeEWeleofayFUVbjGE_Ak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123035232748:android:8583c732a50fc6c60638c9",
+        "android_client_info": {
+          "package_name": "com.example.firebaes25_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCisfP0AzVvbxVeEWeleofayFUVbjGE_Ak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
